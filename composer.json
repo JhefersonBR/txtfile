@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "jheferson-br\TxtFile": "src/"
+            "TxtFile": "src/"
         }
     },
     "require": {
