@@ -1,6 +1,7 @@
 {
     "name": "jheferson-br/txtfile",
     "description": "Lib em PHP para geração de arquivos TXT com customização de layouts.",
+    "type": "project",
     "authors": [
         {
             "name": "Jheferson Fonseca",
