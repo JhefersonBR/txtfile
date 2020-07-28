@@ -1,5 +1,5 @@
 {
-    "name": "JhefersonBR/txtfile",
+    "name": "Jheferson-br/txtfile",
     "description": "Lib em PHP para geração de arquivos TXT com customização de layouts.",
     "require": {
         "php": "^7.2",
