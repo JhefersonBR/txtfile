@@ -8,8 +8,12 @@
             "email": "play_jheferson@hotmail.com"
         }
     ],
+    "autoload": {
+        "psr-0": {
+            "Test": "src/"
+        }
+    },
     "require": {
-        "php": "^7.2",
-        "jheferson-br/txtfile": "^1.0.3"
+        "php": "^7.2"
     }
 }
