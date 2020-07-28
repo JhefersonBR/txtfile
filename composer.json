@@ -1,7 +1,15 @@
 {
     "name": "jheferson-br/txtfile",
     "description": "Lib em PHP para geração de arquivos TXT com customização de layouts.",
+    "authors": [
+        {
+            "name": "Jheferson Fonseca",
+            "email": "play_jheferson@hotmail.com"
+        }
+    ],
     "require": {
         "php": "^7.2"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
