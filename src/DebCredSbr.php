@@ -2,6 +2,7 @@
 /**
  * Undocumented class
  */
+namespace TxtFile;
 class DebCredSbr extends TxtFile{
 
     function __construct($filename, $filepath, $data_header, $data, $data_footer){

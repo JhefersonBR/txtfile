@@ -1,5 +1,5 @@
 <?php
-
+namespace TxtFile;
 trait TraitTxtFile
 {
     private function proccessHeader(){

@@ -1,4 +1,5 @@
 <?php
+namespace TxtFile;
 class LayoutDemonstrativoLctos extends TxtFile{
 
     function __construct($filename, $filepath, $data){
