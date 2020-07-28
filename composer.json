@@ -1,0 +1,8 @@
+{
+    "name": "JhefersonBR/txtfile",
+    "description": "Lib em PHP para geração de arquivos TXT com customização de layouts.",
+    "require": {
+        "php": "^7.2",
+        "another-vendor/package": "1.*"
+    }
+}
