@@ -1,6 +1,6 @@
 {
     "name": "jheferson-br/txtfile",
-    "description": "Lib em PHP para geração de arquivos TXT com customização de layouts.",
+    "description": "Lib em PHP para geração de arquivos TXT com customização de layouts. Uso restrito para projetos Adianti",
     "type": "project",
     "authors": [
         {
