@@ -141,7 +141,7 @@ trait TraitTxtFile
         $arquivo = $this->filepath.$this->filename;
 
         print_r("
-        <script type='txt/javascript>
+        <script>
             __adianti_download_file('{$arquivo}');
         </script>
         ");
