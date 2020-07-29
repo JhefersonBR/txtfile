@@ -140,6 +140,10 @@ trait TraitTxtFile
 
         $arquivo = $this->filepath.$this->filename;
 
-        TPage::openFile($arquivo);
+        echo "
+        <script type='txt/javascript>
+            __adianti_download_file('{$arquivo}');
+        </script>
+        ";
     }
 }
