@@ -1,13 +1,13 @@
 <?php
-namespace TxtFile;
-class Layout10Demonstrativo extends TxtFile{
+namespace txtfile;
+class Layout201Demonstrativo extends TxtFile{
 
     function __construct($filename, $filepath, $data_header, $data, $data_footer){
         
         $layout = new TxtLayout();
         
         $header = [
-            new TxtField("nLinha", TxtField::TYPE_INTEGER, 8, null, null, "|"),
+            new TxtField("nLinha", TxtField::TYPE_INTEGER, 6, null, null, "|"),
             new TxtField("tipo_registro", TxtField::TYPE_INTEGER, 4, null, null, "|"),
             new TxtField("cnpj", TxtField::TYPE_INTEGER, 8, null, null, "|"),
             new TxtField("razao_social", TxtField::TYPE_STRING, 100, "", "", "|"),
@@ -27,7 +27,7 @@ class Layout10Demonstrativo extends TxtFile{
         $layout->addHeader($header);
 
         $header = [
-            new TxtField("nLinha", TxtField::TYPE_INTEGER, 8, null, null, "|"),
+            new TxtField("nLinha", TxtField::TYPE_INTEGER, 6, null, null, "|"),
             new TxtField("tipo_registro", TxtField::TYPE_INTEGER, 4, null, null, "|"),
             new TxtField("inscr_municipal", TxtField::TYPE_INTEGER, 15, "", "", "|"),
             /*Indica se Inscrição Municipal foi
@@ -102,11 +102,10 @@ class Layout10Demonstrativo extends TxtFile{
         $layout->addHeader($header);
 
         $detail = [
-            new TxtField("nLinha", TxtField::TYPE_INTEGER, 8, null, null, "|"),
+            new TxtField("nLinha", TxtField::TYPE_INTEGER, 6, null, null, "|"),
             new TxtField("tipo_registro", TxtField::TYPE_INTEGER, 4, null, null, "|"),
             new TxtField("inscr_municipal", TxtField::TYPE_STRING, 15, "", "", "|"),
             new TxtField("conta_contabil", TxtField::TYPE_STRING, 30, "", "", "|"),
-            new TxtField("des_mista", TxtField::TYPE_INTEGER, 2, null, null, "|"),
             new TxtField("cod_trib_desif", TxtField::TYPE_INTEGER, 9, null, null, "|"),
             new TxtField("valr_cred_mens", TxtField::TYPE_FLOAT, 12, "", "", "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),
             new TxtField("valr_debt_mens", TxtField::TYPE_FLOAT, 12, "", "", "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),
@@ -117,7 +116,6 @@ class Layout10Demonstrativo extends TxtFile{
             new TxtField("aliq_issqn", TxtField::TYPE_FLOAT, 19, "", "", "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),
             new TxtField("inct_fisc", TxtField::TYPE_FLOAT, 19, "", "", "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),
             new TxtField("desc_inct_fisc", TxtField::TYPE_STRING, 255, "", "", "|"),
-            new TxtField("valr_issqn_retd", TxtField::TYPE_FLOAT, 19, "", "", "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),
             new TxtField("motv_nao_exig", TxtField::TYPE_INTEGER, 1, null, null, "|"),
             new TxtField("proc_motv_nao_ex", TxtField::TYPE_STRING, 20, "", ""),
         ];
@@ -125,10 +123,10 @@ class Layout10Demonstrativo extends TxtFile{
         $layout->addDetail($detail);
         
         $footer = [
-            new TxtField("nLinha", TxtField::TYPE_INTEGER, 8, null, null, "|"),
+            new TxtField("nLinha", TxtField::TYPE_INTEGER, 6, null, null, "|"),
             new TxtField("tipo_registro", TxtField::TYPE_INTEGER, 4, null, null, "|"),
             new TxtField("cnpj", TxtField::TYPE_INTEGER, 6, null, null, "|"),
-            new TxtField("cod_trib_desif", TxtField::TYPE_INTEGER, 9, null, null, "|"),
+            new TxtField("cod_trib_desif", TxtField::TYPE_STRING, 20, "", "", "|"),
             new TxtField("rece_decl_cnso", TxtField::TYPE_FLOAT, 19, "", "", "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),
             new TxtField("dedu_rece_cecl_sub_titu", TxtField::TYPE_FLOAT, 19, "", "", "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),
             new TxtField("dedu_rece_decl_cnso", TxtField::TYPE_FLOAT, 19, "", "", "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),
@@ -141,7 +139,7 @@ class Layout10Demonstrativo extends TxtFile{
             new TxtField("inct_fisc", TxtField::TYPE_FLOAT, 19, "", "", "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),
             new TxtField("desc_inct_fisc", TxtField::TYPE_STRING, 255, "", "", "|"),
             new TxtField("valr_a_cmpn", TxtField::TYPE_FLOAT, 19, "", "", "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),
-            new TxtField("arig_cred_a_cmp_n", TxtField::TYPE_FLOAT, 19, "", "", "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),
+            new TxtField("arig_cred_a_cmp_n", TxtField::TYPE_STRING, 19, null, null, "|"),
             new TxtField("valr_issqn_rclh", TxtField::TYPE_FLOAT, 19, "", "", "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),
             new TxtField("motv_nao_exig", TxtField::TYPE_INTEGER, 1, null, null, "|"),
             new TxtField("proc_motv_nao_exig", TxtField::TYPE_STRING, 20, "", "", "|"),

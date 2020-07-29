@@ -1,6 +1,6 @@
 <?php
-namespace TxtFile;
-class Layout201DemonstrativoAnual extends TxtFile{
+namespace txtfile;
+class Layout30DemonstrativoAnual extends TxtFile{
 
     function __construct($filename, $filepath, $data_header, $data, $data_footer){
         
@@ -111,8 +111,6 @@ class Layout201DemonstrativoAnual extends TxtFile{
             new TxtField("valr_debt", TxtField::TYPE_FLOAT, 16, null, null, "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),            
             new TxtField("valr_cred", TxtField::TYPE_FLOAT, 16, null, null, "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),            
             new TxtField("sald_final", TxtField::TYPE_FLOAT, 16, null, null, "", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),            
-            //new TxtField("conta_supe", TxtField::TYPE_STRING, 8, "", "", "|"),
-            //new TxtField("conta_cosif", TxtField::TYPE_INTEGER, 8, "", "",""),
             
         ];
         //0410

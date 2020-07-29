@@ -1,6 +1,6 @@
 <?php
-namespace TxtFile;
-class Layout21DemonstrativoAnual extends TxtFile{
+namespace txtfile;
+class Layout10DemonstrativoAnual extends TxtFile{
 
     function __construct($filename, $filepath, $data_header, $data, $data_footer){
         
@@ -107,10 +107,13 @@ class Layout21DemonstrativoAnual extends TxtFile{
             new TxtField("inscr_municipal", TxtField::TYPE_STRING, 15, "", "", "|"),
             new TxtField("ano_mes_cmpe", TxtField::TYPE_STRING, 6, "", "", "|"),
             new TxtField("conta", TxtField::TYPE_STRING, 15, "", "", "|"),
+            new TxtField("des_mista", TxtField::TYPE_INTEGER, 2, null, null, "|"),
             new TxtField("sald_inic", TxtField::TYPE_FLOAT, 16, null, null, "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),            
             new TxtField("valr_debt", TxtField::TYPE_FLOAT, 16, null, null, "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),            
             new TxtField("valr_cred", TxtField::TYPE_FLOAT, 16, null, null, "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),            
-            new TxtField("sald_final", TxtField::TYPE_FLOAT, 16, null, null, "", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),            
+            new TxtField("sald_final", TxtField::TYPE_FLOAT, 16, null, null, "|", ["thousand_separator" => "", "decimal_separator" => ",", "decimals" => 2]),            
+            new TxtField("conta_supe", TxtField::TYPE_STRING, 8, "", "", "|"),
+            new TxtField("conta_cosif", TxtField::TYPE_INTEGER, 8, "", "",""),
             
         ];
         //0410

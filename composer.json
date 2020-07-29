@@ -8,9 +8,10 @@
             "email": "play_jheferson@hotmail.com"
         }
     ],
+    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "TxtFile": "src/"
+            "": "src/"
         }
     },
     "require": {

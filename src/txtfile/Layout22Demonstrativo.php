@@ -1,6 +1,6 @@
 <?php
-namespace TxtFile;
-class Layout21Demonstrativo extends TxtFile{
+namespace txtfile;
+class Layout22Demonstrativo extends TxtFile{
 
     function __construct($filename, $filepath, $data_header, $data, $data_footer){
         

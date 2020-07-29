@@ -1,5 +1,5 @@
 <?php
-namespace TxtFile;
+namespace txtfile;
 class TxtField
 {
     public $name;

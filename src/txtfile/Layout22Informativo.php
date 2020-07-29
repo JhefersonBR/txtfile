@@ -1,5 +1,5 @@
 <?php
-namespace TxtFile;
+namespace txtfile;
 class Layout22Informativo extends TxtFile{
 
     function __construct($filename, $filepath, $data_header, $data){

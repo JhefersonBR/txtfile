@@ -1,5 +1,5 @@
 <?php
-namespace TxtFile;
+namespace txtfile;
 class TxtLayout
 {
     private $details;
