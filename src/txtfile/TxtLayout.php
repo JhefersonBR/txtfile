@@ -6,7 +6,13 @@ class TxtLayout
     private $headers;
     private $footers;   
 
-
+    /**
+     * Classe resposável por montar a estrutura do layout
+     *
+     * @param array $details
+     * @param array $headers
+     * @param array $footers
+     */
     function __construct($details = [], $headers = [], $footers = []){
         $this->details          = $details;
         $this->headers          = $headers;
