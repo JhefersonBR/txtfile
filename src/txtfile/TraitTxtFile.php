@@ -30,10 +30,10 @@ trait TraitTxtFile
     private function proccessDetail(){
         mb_internal_encoding('utf-8');
         $layout_details = $this->layout->getDetails();
-        $data = $this->data;
+        $data_details = $this->data;
 
         foreach ($layout_details as $key => $field_details) {
-            $datas = $data[$key];
+            $datas = $data_details[$key];
             foreach ($datas as $data) {
                 foreach ($field_details as $field) {
                     if($field->type == TxtField::TYPE_FLOAT){
